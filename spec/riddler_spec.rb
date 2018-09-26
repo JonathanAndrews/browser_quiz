@@ -6,7 +6,10 @@ describe Riddler do
 
   context "#fetch_question" do
     it "should return a riddle from data base" do
-      expect(riddler.fetch_question).to eq "This thing all things devours, Birds, beasts, trees, and flowers. Gnaws iron bites steel, Grinds hard stones to meal, Slays king, ruins town, And beats high mountain down."
+
+      insert_riddle_to_database
+
+      expect(riddler.fetch_question).to eq ({"answer"=>"Time", "id"=>"1", "riddle" => "This thing all things devours;\n  Birds, beasts, trees, flowers;\n  Gnaws iron, bites steel;\n  Grinds hard stones to meal;\n  Slays king, ruins town,\n  And beats mountain down."})
     end
   end
 end

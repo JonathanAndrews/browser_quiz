@@ -1,7 +1,7 @@
-<% if true %>
+<% if @submitted_answer ==  @answer%>
   <h1>Correct!</h1>
 <% else %>
-  <h1>Answer</h1>
+  <h1>Sorry, the answer is<br><br><%= @answer %></h1>
 <% end %>
 
 <form action="/riddle">

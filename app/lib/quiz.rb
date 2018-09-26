@@ -1,3 +1,5 @@
+require_relative 'riddler'
+
 class Quiz
 
   attr_reader :question_source

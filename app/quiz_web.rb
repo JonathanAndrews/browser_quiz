@@ -1,6 +1,6 @@
  require 'sinatra/base'
 
- class Quiz < Sinatra::Base
+ class RiddleQuizApp < Sinatra::Base
    get '/' do
      erb :index
    end

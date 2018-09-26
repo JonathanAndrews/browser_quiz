@@ -9,6 +9,6 @@ feature 'riddle page' do
 
   scenario 'should have a riddle' do
     visit '/riddle'
-    expect(page).to have_content "This is a riddle"
+    expect(page).to have_content "This thing all things devours:"
   end
 end

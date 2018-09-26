@@ -1,3 +1,4 @@
+ require_relative 'lib/quiz'
  require 'sinatra/base'
 
  class RiddleQuizApp < Sinatra::Base
@@ -6,7 +7,7 @@
    end
 
    get '/riddle' do
-     @riddle = "This is a riddle"
+     @riddle = Quiz.new.fetch_question
      erb :riddle
    end
 

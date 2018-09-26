@@ -1,3 +1,4 @@
+ENV['ENVIRONMENT'] = 'test'
 ENV['RACK_ENV'] = 'test'
 
 require_relative File.join(File.dirname(__FILE__), '..', 'app/quiz_web.rb')
